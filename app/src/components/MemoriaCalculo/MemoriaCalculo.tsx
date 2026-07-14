@@ -39,7 +39,7 @@ export function MemoriaCalculo({ linhas, fontes, periodo }: MemoriaCalculoProps)
         <span className={styles.seta}>
           <ChevronRight size={12} />
         </span>
-        Memória de cálculo -- a prova, pronta para o processo
+        Memória de cálculo
       </summary>
       <div className={styles.corpo}>
         <table className={styles.tabela}>
