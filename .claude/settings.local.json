@@ -13,7 +13,10 @@
       "Bash(tail -30 /tmp/vite-dev.log)",
       "Bash(tail -20 /tmp/vite-dev.log)",
       "Bash(git branch *)",
-      "Bash(git symbolic-ref *)"
+      "Bash(git symbolic-ref *)",
+      "mcp__claude_ai_Vercel__list_projects",
+      "mcp__claude_ai_Vercel__get_project",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('vercel.json','utf-8'\\)\\); console.log\\('vercel.json is valid JSON'\\)\")"
     ]
   }
 }
