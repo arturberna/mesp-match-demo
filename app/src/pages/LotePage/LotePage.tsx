@@ -39,8 +39,7 @@ export function LotePage() {
   return (
     <div className={styles.pagina}>
       <p className={styles.intro}>
-        A planilha de itens entra de manhã. O relatório sai antes do café -- com um preço e um selo de
-        confiança por item.
+        Envie a planilha de cotação e obtenha o relatório de análise de preços da SNEAELIS com um preço e um selo de confiança por item.
       </p>
 
       {estado === 'ocioso' && <ZonaUpload onEnviar={() => setEstado('processando')} />}
