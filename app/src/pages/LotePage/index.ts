@@ -1,0 +1,1 @@
+export { LotePage } from './LotePage'

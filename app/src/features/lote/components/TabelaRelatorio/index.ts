@@ -1,0 +1,1 @@
+export { TabelaRelatorio } from './TabelaRelatorio'

@@ -1,0 +1,95 @@
+.header {
+  background: var(--navbar-bg);
+  color: var(--ink);
+  border-bottom: var(--border-width) solid var(--line);
+  padding: var(--space-3) var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  transition: background-color var(--transition-base), border-color var(--transition-base);
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.marcaIcone {
+  font-size: 1.25em;
+  font-style: normal;
+  color: var(--primary);
+}
+
+.protótipo {
+  background: var(--card);
+  color: var(--ink-2);
+  border: var(--border-width) solid var(--line);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.tabs {
+  display: flex;
+  gap: var(--space-1);
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.tab {
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  border-bottom: 2px solid transparent;
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.tabAtivo {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.temaBotao {
+  color: var(--muted);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.temaBotao:hover {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+@media (max-width: 720px) {
+  .header {
+    padding: var(--space-2) var(--space-3);
+  }
+  .tabs {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

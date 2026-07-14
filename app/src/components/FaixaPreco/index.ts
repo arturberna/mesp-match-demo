@@ -1,0 +1,1 @@
+export { FaixaPreco } from './FaixaPreco'

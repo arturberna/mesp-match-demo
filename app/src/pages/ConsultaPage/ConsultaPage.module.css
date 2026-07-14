@@ -1,0 +1,76 @@
+.pagina {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.buscaLinha {
+  display: flex;
+  gap: var(--space-2);
+  position: relative;
+}
+
+.buscaCampo {
+  flex: 1;
+}
+
+.sugestoes {
+  position: absolute;
+  z-index: var(--z-dropdown);
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--card);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.sugestao {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  text-align: left;
+}
+
+.sugestao:hover,
+.sugestao:focus-visible {
+  background: var(--primary-soft);
+}
+
+.chips {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.chipsRotulo {
+  font-size: var(--font-size-xs);
+  color: var(--muted);
+}
+
+.resultado {
+  margin-top: var(--space-2);
+}
+
+.vazio {
+  background: var(--card);
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-5);
+  text-align: center;
+  color: var(--ink-2);
+  margin-top: var(--space-4);
+}
+
+.vazioTitulo {
+  font-weight: var(--font-weight-semibold);
+  color: var(--ink);
+  margin-bottom: var(--space-1);
+}

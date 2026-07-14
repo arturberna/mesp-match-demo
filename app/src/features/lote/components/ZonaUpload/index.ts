@@ -1,0 +1,1 @@
+export { ZonaUpload } from './ZonaUpload'

@@ -1,0 +1,54 @@
+.barra {
+  display: flex;
+  gap: 2px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.segmento {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4px;
+  transition: filter var(--transition-fast);
+  border: none;
+  font-size: 0;
+}
+
+button.segmento {
+  cursor: pointer;
+}
+
+.segmento:hover,
+.segmento:focus-visible {
+  filter: brightness(1.08);
+}
+
+.n1 { background: var(--n1); }
+.n2 { background: var(--n2); }
+.n3 { background: var(--n3); }
+.n4 { background: var(--n4); }
+
+.legenda {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-top: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--ink-2);
+}
+
+.legendaItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ponto {
+  width: 9px;
+  height: 9px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}

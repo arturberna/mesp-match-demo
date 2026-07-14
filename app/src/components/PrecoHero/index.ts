@@ -1,0 +1,1 @@
+export { PrecoHero } from './PrecoHero'

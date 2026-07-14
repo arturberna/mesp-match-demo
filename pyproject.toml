@@ -1,0 +1,18 @@
+[project]
+name = "mesp-match-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.5.4",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.3",
+    "pyarrow>=25.0.0",
+    "pyyaml>=6.0.3",
+    "rapidfuzz>=3.14.5",
+    "regex>=2026.7.10",
+    "rich>=15.0.0",
+    "snowballstemmer>=3.1.1",
+    "unidecode>=1.4.0",
+]

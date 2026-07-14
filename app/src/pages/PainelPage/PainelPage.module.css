@@ -1,0 +1,111 @@
+.pagina {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.heroi {
+  background: var(--card);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.heroiTitulo {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--primary);
+  margin-bottom: var(--space-3);
+}
+
+.efeitoSessao {
+  margin-top: var(--space-3);
+  background: var(--n1-bg);
+  color: var(--n1);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3);
+}
+
+.tile {
+  background: var(--card);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.tileValor {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xl);
+}
+
+.tileRotulo {
+  font-size: var(--font-size-xs);
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.tileNota {
+  font-size: 10.5px;
+  color: var(--muted);
+  margin-top: var(--space-1);
+}
+
+.secao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.tituloSecao {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--primary);
+}
+
+.filaLista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.filaItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--card);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+}
+
+.filaNome {
+  font-weight: var(--font-weight-semibold);
+  text-transform: capitalize;
+}
+
+.filaPromoviveis {
+  color: var(--primary);
+  font-weight: var(--font-weight-semibold);
+  white-space: nowrap;
+}
+
+.rodapeHonestidade {
+  border-top: var(--border-width) solid var(--line);
+  padding-top: var(--space-4);
+  font-size: var(--font-size-xs);
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}

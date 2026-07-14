@@ -1,0 +1,1 @@
+export { CardFamilia } from './CardFamilia'

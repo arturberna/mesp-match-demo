@@ -1,0 +1,44 @@
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-5) 0;
+}
+
+.passo {
+  background: var(--card);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  text-align: center;
+  box-shadow: var(--shadow);
+  opacity: 0.45;
+  transition: opacity var(--transition-base), border-color var(--transition-base);
+}
+
+.passo.ativo {
+  opacity: 1;
+  border-color: var(--primary);
+}
+
+.passo.concluido {
+  opacity: 1;
+}
+
+.numero {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xl);
+  color: var(--primary);
+}
+
+.rotulo {
+  display: block;
+  margin: var(--space-2) 0 var(--space-1);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.descricao {
+  font-size: var(--font-size-xs);
+  color: var(--ink-2);
+}

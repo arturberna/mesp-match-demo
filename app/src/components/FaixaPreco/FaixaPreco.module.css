@@ -1,0 +1,66 @@
+.faixa {
+  position: relative;
+  height: 56px;
+  margin: var(--space-2) var(--space-2) 0;
+}
+
+.trilho {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--line);
+  border-radius: 3px;
+}
+
+.banda {
+  position: absolute;
+  top: 22px;
+  height: 10px;
+  background: var(--primary-soft);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+}
+
+.marcador {
+  position: absolute;
+  top: 18px;
+  width: 3px;
+  height: 18px;
+  border-radius: 2px;
+  background: var(--primary);
+}
+
+.marcadorVoce {
+  background: var(--n3);
+}
+
+.rotuloTipico {
+  position: absolute;
+  top: 0;
+  font-size: 11.5px;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary);
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.rotuloVoce {
+  position: absolute;
+  bottom: 0;
+  font-size: 11.5px;
+  font-weight: var(--font-weight-bold);
+  color: var(--n3);
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.rotuloExtremo {
+  position: absolute;
+  top: 38px;
+  font-size: 11.5px;
+  color: var(--muted);
+  transform: translateX(-50%);
+  white-space: nowrap;
+}

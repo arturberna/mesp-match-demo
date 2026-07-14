@@ -1,0 +1,32 @@
+.zona {
+  border: 2px dashed var(--primary);
+  background: var(--primary-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8) var(--space-5);
+  text-align: center;
+  color: var(--primary);
+  font-weight: var(--font-weight-semibold);
+  transition: background-color var(--transition-fast);
+  cursor: pointer;
+}
+
+.zona.arrastando {
+  background: var(--primary);
+  color: var(--text-inverse);
+}
+
+.dica {
+  display: block;
+  font-weight: var(--font-weight-normal);
+  color: var(--ink-2);
+  margin-top: var(--space-2);
+  font-size: var(--font-size-sm);
+}
+
+.zona.arrastando .dica {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.acoes {
+  margin-top: var(--space-4);
+}

@@ -1,0 +1,61 @@
+.card {
+  background: var(--card);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.card:hover,
+.card:focus-visible {
+  border-color: var(--primary);
+}
+
+.estado {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px var(--space-2);
+  border-radius: var(--radius-full);
+  transition: background-color var(--transition-narrativa), color var(--transition-narrativa);
+}
+
+.validada { background: var(--n1-bg); color: var(--n1); }
+.aguardando { background: var(--n2-bg); color: var(--n2); }
+
+.nome {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  text-transform: capitalize;
+}
+
+.criticos {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.contadores {
+  font-size: var(--font-size-xs);
+  color: var(--ink-2);
+  line-height: var(--line-height-base);
+}
+
+.contadores b {
+  color: var(--ink);
+}
+
+.cta {
+  margin-top: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--primary);
+}

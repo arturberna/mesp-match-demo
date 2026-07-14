@@ -1,0 +1,98 @@
+.controles {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.buscaCampo {
+  min-width: 220px;
+  flex: 1;
+}
+
+.contagem {
+  font-size: var(--font-size-xs);
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.colunas {
+  --grid: minmax(220px, 2fr) 140px 110px 160px 80px 110px 130px;
+}
+
+.cabecalho {
+  display: grid;
+  grid-template-columns: var(--grid);
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1.5px solid var(--line);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+}
+
+.cabecalhoBotao {
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.cabecalhoBotao:hover {
+  color: var(--ink);
+}
+
+.numerica {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.scroller {
+  height: 520px;
+  overflow-y: auto;
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-md);
+}
+
+.linha {
+  display: grid;
+  grid-template-columns: var(--grid);
+  gap: var(--space-2);
+  align-items: center;
+  padding: 0 var(--space-3);
+  border-bottom: var(--border-width) solid var(--line);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  background: var(--card);
+  transition: background-color var(--transition-fast);
+}
+
+.linha:hover,
+.linha:focus-visible {
+  background: var(--primary-soft);
+}
+
+.celula {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.numericaCelula {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.semPreco {
+  color: var(--muted);
+}
+
+.situacaoAcima { color: var(--n3); font-weight: var(--font-weight-semibold); }
+.situacaoAbaixo { color: var(--n2); }
+.situacaoDentro { color: var(--ink-2); }

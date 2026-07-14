@@ -1,0 +1,62 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: var(--z-drawer);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.painel {
+  background: var(--card);
+  width: min(560px, 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.15);
+  transform: translateX(0);
+  animation: entrar var(--transition-narrativa);
+}
+
+@keyframes entrar {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .painel {
+    animation: none;
+  }
+}
+
+.cabecalho {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-5) var(--space-5) var(--space-4);
+  border-bottom: var(--border-width) solid var(--line);
+}
+
+.titulo {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--ink);
+}
+
+.fecharBotao {
+  color: var(--ink-2);
+  padding: var(--space-1);
+  border-radius: var(--radius-md);
+}
+
+.fecharBotao:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.corpo {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-5);
+}

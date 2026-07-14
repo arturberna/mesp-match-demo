@@ -1,0 +1,28 @@
+.pagina {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.intro {
+  color: var(--ink-2);
+  max-width: 640px;
+}
+
+.controles {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buscaCampo {
+  min-width: 220px;
+  flex: 1;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-3);
+}

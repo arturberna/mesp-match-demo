@@ -1,0 +1,35 @@
+.grupo {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rotulo {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--ink-2);
+  margin-right: 2px;
+}
+
+.botao {
+  background: var(--paper);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-full);
+  padding: 5px var(--space-4);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--ink-2);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.botao:hover:not(.ativo) {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.ativo {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--text-inverse);
+}

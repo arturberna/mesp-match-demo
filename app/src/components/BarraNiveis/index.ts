@@ -1,0 +1,1 @@
+export { BarraNiveis } from './BarraNiveis'

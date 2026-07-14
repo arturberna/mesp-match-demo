@@ -1,0 +1,1 @@
+export { DetalheFamilia } from './DetalheFamilia'

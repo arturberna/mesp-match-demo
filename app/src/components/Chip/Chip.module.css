@@ -1,0 +1,35 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: var(--card);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-full);
+  padding: 5px var(--space-3);
+  font-size: var(--font-size-xs);
+  color: var(--ink-2);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+button.chip {
+  cursor: pointer;
+}
+
+button.chip:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.removivel {
+  padding-right: var(--space-2);
+}
+
+.removerBotao {
+  display: inline-flex;
+  color: var(--muted);
+  border-radius: var(--radius-full);
+}
+
+.removerBotao:hover {
+  color: var(--n3);
+}

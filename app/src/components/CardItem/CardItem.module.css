@@ -1,0 +1,58 @@
+.card {
+  background: var(--card);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.cabecalho {
+  padding: var(--space-4) var(--space-5) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.consulta {
+  font-size: var(--font-size-sm);
+  color: var(--muted);
+}
+
+.consulta b {
+  display: block;
+  color: var(--ink);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-top: 2px;
+}
+
+.corpo {
+  padding: var(--space-3) var(--space-5) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.casouCom {
+  font-size: var(--font-size-sm);
+  color: var(--ink-2);
+}
+
+.casouComTexto {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+.dica {
+  font-size: var(--font-size-xs);
+  color: var(--muted);
+}
+
+.semPreco {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
